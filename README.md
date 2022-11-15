@@ -25,7 +25,7 @@ We also convert an image (from Caltech-101 dataset) into synthetic spikes and vi
 
 #### __$\bullet$ Usage__
 
-Code is in ./Source/`sim.py` (available soon).
+Code is in ./Source/`sim.py`.
 
 1. Input: Images (`load_image`, $G$) | Simulation Time (`sim_time`, $T$) 
 
