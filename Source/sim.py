@@ -172,9 +172,9 @@ def Display(image, sim):
 if __name__ == '__main__':
 
     # input_path = 'Pic/sample/real_spike.npz'
-    input_path = 'Pic/sample/car.jpg'
+    input_path = 'Source/sample/car.jpg'
     sim_time = 50   
-    sim_type = 'spike' # 'image' 'spike'
+    sim_type = 'image' # 'image' 'spike'
 
     # Simulation from Raw Spikes or Images
     if sim_type == 'spike':
