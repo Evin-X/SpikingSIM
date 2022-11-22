@@ -35,7 +35,7 @@ Code is in ./Source/`sim.py`.
 
 4. Simulation: Simulate the spike generation process of spiking cameras (`Simulation`)
 
-\ensp\* Note: We release a *simplified version* for fast simulation (`Simulation_Simplified`)
+    \* Note: We release a *simplified version* for fast simulation (`Simulation_Simplified`)
 
 #### __$\bullet$ Citation__
 
