@@ -31,9 +31,11 @@ Code is in ./Source/`sim.py`.
 
 2. Output: Spike Array (`syn_spike`, $H\times W\times T$) 
 
-3. Noise: Noise intensity can be adjusted by Gaussian (`Inherent_Noise`, $\mathcal{N}$) and Poisson (`Diffuse_Noise`, $\mathcal{P}$) models.
+3. Noise: Noise intensity can be adjusted by Gaussian (`Inherent_Noise`, $\mathcal{N}$) and Poisson (`Diffuse_Noise`, $\mathcal{P}$) models
 
 4. Simulation: Simulate the spike generation process of spiking cameras (`Simulation`)
+
+* Note: We release a simplified version for fast simulation (`Simulation_Simplified`)
 
 #### __$\bullet$ Citation__
 
