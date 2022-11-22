@@ -105,6 +105,27 @@ def Simulation(I, T=50):
 
     return syn_rec
 
+def Simulation_Simplified(I, T):
+    """
+    A simplified version of spiking simulator.
+    args:
+        - I: grayscale of a given image 
+        - T: simulation time length 
+    return:
+        - 0/1 binary array (spikes, shape: TxHxW)
+    """
+    Vth = 1.0
+    K = 0.45
+    spk_rec = []
+    g = np.random.rand(I.shape[0], I.shape[1])
+    for t in range(T+1):
+        g += K * I
+        spk = np.where(g >= Vth, 1, 0)
+        spk_rec.append(spk)
+        g = np.where(g >= Vth, g - Vth, g)
+        
+    return np.array(spk_rec[0:T])
+
 def Visualization(real, sim):
     """
     Display raw spikes and sim spikes.
